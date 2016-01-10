@@ -4,7 +4,7 @@ title:  "피아노 치는 개발자를 위한 한걸음"
 date:   2015-01-10 20:31:47
 categories: jekyll update
 image: piano.jpg
-comment: true
+comments: true
 ---
 
 아직 개발과 피아노 모두 서툴지만, 내가 그리는 미래에 한걸음씩 다가가야지.
