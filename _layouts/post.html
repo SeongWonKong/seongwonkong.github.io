@@ -23,21 +23,6 @@ body_class: post-template
         {{ content }}
     </div>
 
-    <menu>
-      <a href="" id="btn_share" class="btn" title="Share">
-        <span aria-hidden="true" data-icon="S"></span>
-        <strong>Share</strong>
-      </a>
-      <a href="http://twitter.com/share?text={{ page.title | xml_encode }}&url={{ page.url prepend: site.baseurl }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" id="btn_comment" class="btn" target="_blank">
-        <span aria-hidden="true" data-icon="C"></span> Comment on Twitter
-      </a>
-    </menu>
-
-
-    {% include footer.html %}
-
-</article>
-
 {% if page.comments %}
 <section id="comments" role="comments">
 <div id="disqus_thread"></div>
@@ -55,6 +40,21 @@ dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </section>
 {% endif %}
+    <menu>
+      <a href="" id="btn_share" class="btn" title="Share">
+        <span aria-hidden="true" data-icon="S"></span>
+        <strong>Share</strong>
+      </a>
+      <a href="http://twitter.com/share?text={{ page.title | xml_encode }}&url={{ page.url prepend: site.baseurl }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" id="btn_comment" class="btn" target="_blank">
+        <span aria-hidden="true" data-icon="C"></span> Comment on Twitter
+      </a>
+    </menu>
+
+
+    {% include footer.html %}
+
+</article>
+
 
 
 
