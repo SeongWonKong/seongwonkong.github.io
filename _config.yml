@@ -1,15 +1,14 @@
 # Site settings
-title: "Joon: Roon for Jekyll"
+title: "개발자 꽁의 블로그"
 logo: logo.png # image from https://www.flickr.com/photos/lwr/5496279831/in/set-72157594159055823
-email: your-email@domain.com
+email: seongwonkong@nhnent.com
 description: > # this means to ignore newlines until "baseurl:"
-  Roon was an excellent service, with a beautiful understated design. Roon
-  was eventually acquired by Ghost, who awesomely chose to open source the theme.
-  <br/>This is my Jekyll port of the Roon theme
-url: "http://vormwald.github.io" # the base hostname & protocol for your site
+  NHN Entertainment 토스트 루키 3기 공성원입니다.<br/>
+  개발, 피아노, 공상과학영화에 관심이 많습니다!
+url: "http://seongwonkong.github.io" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: NULL
+github_username:  SeongWongKong
 
 # Build settings
 markdown: kramdown
