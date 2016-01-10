@@ -3,7 +3,9 @@ title: "개발자 꽁의 블로그"
 logo: logo.png # image from https://www.flickr.com/photos/lwr/5496279831/in/set-72157594159055823
 email: seongwonkong@nhnent.com
 description: > # this means to ignore newlines until "baseurl:"
-  NHN Entertainment 토스트 루키 3기 공성원입니다.<br/>
+  NHN Entertainment<br/>
+  경기도 성남시 분당구 삼평동 629 플레이뮤지엄 13487<br/>
+  토스트 루키 3기 공성원입니다.<br/>
   개발, 피아노, 공상과학영화에 관심이 많습니다!
 url: "http://seongwonkong.github.io" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
