@@ -11,5 +11,6 @@ url: "http://seongwonkong.github.io" # the base hostname & protocol for your sit
 baseurl: "" # the subpath of your site, e.g. /blog/
 twitter_username: NULL
 github_username:  SeongWongKong
+paginate: 3
 # Build settings
 markdown: kramdown
