@@ -2,7 +2,7 @@
 layout: post
 title:  "피아노 치는 개발자를 위한 한걸음"
 date:   2015-01-10 20:31:47
-categories: jekyll update
+categories: archieve
 image: piano.jpg
 comments: true
 ---
