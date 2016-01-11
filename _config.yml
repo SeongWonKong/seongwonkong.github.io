@@ -12,7 +12,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 twitter_username: NULL
 github_username:  SeongWongKong
 paginate: 2
-paginate_path: "/archives/page/:num"
+paginate_path: "/page/:num"
 
 # Build settings
 markdown: kramdown
