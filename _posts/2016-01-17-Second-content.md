@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "기술교육 1주차를 마치고"
-date:   2015-01-17 01:21:43
+date:   2016-01-17 01:21:43
 categories: archieve
 image: friends.jpg
 comments: true
