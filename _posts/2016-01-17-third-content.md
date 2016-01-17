@@ -3,7 +3,6 @@ layout: post
 title:  "TUI 경험해보기"
 date:   2016-01-17 22:11:43
 categories: archieve
-image: toast.jpg
 comments: true
 ---
 
