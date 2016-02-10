@@ -18,11 +18,14 @@ comments: true
 이렇게 애플리케이션 컨텍스트를 관리하도록 하면 테스트 클래스에서
 여러개의 테스트(@Test)가 진행되어도, 애플리케이션 컨텍스트는 매번 만들어지지 않는다.<br>
 즉, 아래에 설명하겠지만 `독립적인 각각의 테스트`들이 단 한번 생성된 application context를 공유하게 된다.
+
 ## ApplicationContext 위치 지정
-`@ContextConfiguration(locations = {
+{% highlight java %}
+@ContextConfiguration(locations = {
 		"classpath:spring/applicationContext.xml",
 		"classpath:spring/servlet-context.xml"
-      })`
+      })
+{% endhighlight %}
 애플리케이션 컨텍스트.. 즉 설계도의 위치를 지정하는 애노테이션이다.<br>
 설계도 없이는 DI를 못한다 물론.<br>
 
@@ -45,8 +48,11 @@ classpath는 이 classes 경로에서 해당 파일을 찾는다고 할 수 있�
 	* 애플리케이션 컨텍스트와 같은 경우 @BeforeClass에서 한 번만 만들고 공유하면 되지만.. 사실 위에 언급한 JUnit 확장 클래스를 사용하는 편이 낫다.
 
 # 아래 3가지는 토비의 스프링 205p에 나온 몇 가지 학습 테스트에 대해 공부한 결과이다.
+
 ## 1. @Autowired로 가져온 빈 오브젝트와 getBean()으로 가져온 빈은 정말 동일한가?
-`@RunWith(SpringJUnit4ClassRunner.class)
+
+{% highlight java %}
+@RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {
         "classpath:/spring/applicationContext.xml",
         "classpath:/spring/servlet-context.xml"
@@ -79,7 +85,8 @@ public class LearningTest {
         System.out.println(context.getBean(BasicDataSource.class).getUrl());
         System.out.println(context.getBean(BasicDataSource.class).getUsername());
     }
-}`
+}
+{% endhighlight %}
 
 JUnit 확장 클래스를 이용하여 애플리케이션 컨텍스트를 지정하여 만들어진 빈 오브젝트가 votreeDao에 주입된 것<br>
 그리고 context에 주입된 애플리케이션 컨텍스트에서 getBean으로 가져온 votreeDao는 같음을 알 수 있었다.<br>
@@ -88,9 +95,11 @@ JUnit 확장 클래스를 이용하여 애플리케이션 컨텍스트를 지정
 `getBean테스트:com.toast.votree.dao.VotreeDao@7c1e2a2d`<br>
 
 ## 2. 스프링은 정말 싱글톤 방식으로 빈의 오브젝트를 만드는가?
+
 또한, 빈이 싱글톤 스코프를 갖는 것도 확인할 수 있다. 테스트는 각각 독립적으로 실행되는데 VotreeDao 오브젝트의 값이 항상 동일함을 알 수 있다.<br>(그런데.. 이것이 JUnit 확장 클래스를 이용해 애플리케이션 컨텍스트를 한번 만 생성하게 해둬서 동일한거지, 싱글톤임을 확인하는지는 확실하게 모르겠다.. 이 부분도 추후 알아보고 보완해야겠다..)
 
 ## 3. XML에서 설정한 프로퍼티 값이 빈에 잘 주입되는가?
+
 applicationContext.xml에 직접 등록한 프로퍼티 값이 아래와 같다.
 {% highlight html %}
 <bean id="dataSourceHooked" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
