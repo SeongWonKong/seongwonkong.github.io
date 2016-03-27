@@ -1,6 +1,6 @@
-﻿---
+---
 layout: post
-title:  "안드로이드 Task, Activity"
+title:  "Android Task, Activity"
 date:   2016-03-22 14:34:22
 categories: archieve
 comments: true
@@ -92,4 +92,10 @@ intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); 와 같은 형식으로 사용�
 	1. clearTaskOnLaunch 를 true로 설정할 경우, 재시작할 때마다 루트를 제외한 모든 액티비티들을 종료한다.(루트에 지정하는 속성이다)
 	2. finishOnTaskLaunch를 true로 설정할 경우, 해당 액티비티는 재시작할 때마다 스택에서 제거된다. 비활성화 되어있던 태스크를 다시 가져올 때 불필요한 화면은 제거할 때 주로 사용한다. 
 	3. alwaysRetainTaskState 언제나 스택의 모든 액티비티를 유지한다.(루트 액티비티에 지정하는 속성이다)
+
+
+
+
+----------------
+`안드로이드 프로그래밍 정복 마시멜로판`(김상형 저) 책을 참고했습니다.
     

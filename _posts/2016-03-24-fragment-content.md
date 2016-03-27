@@ -1,6 +1,6 @@
-﻿---
+---
 layout: post
-title:  "안드로이드 Fragment"
+title:  "Android Fragment"
 date:   2016-03-24 14:34:22
 categories: archieve
 comments: true
@@ -151,3 +151,7 @@ FragmentTransaction addToBackStack(String name)
 ```
 현재 프래그먼트 상태를 백스택에 저장합니다. 
 액티비티의 스택과 유사하지만 사용자가 직접 관리해야됩니다. Back버튼을 누르면 스택 최상위 프래그먼트를 꺼냅니다.
+
+
+----------------
+`안드로이드 프로그래밍 정복 마시멜로판`(김상형 저) 책을 참고했습니다.

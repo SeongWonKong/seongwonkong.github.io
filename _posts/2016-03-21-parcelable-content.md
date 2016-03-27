@@ -1,11 +1,10 @@
-﻿---
+---
 layout: post
-title:  "안드로이드 Parcelable"
+title:  "Android Parcelable 객체"
 date:   2016-03-21 14:34:22
 categories: archieve
 comments: true
 ---
-
 
 # Parcelable
 parcelable은 소포, 꾸러미를 뜻합니다.
@@ -127,3 +126,9 @@ Parcelable 꾸러미로 만들기 위해서는 그 내부 정보도 parcelable�
 따라서 해당 객체는 Parcelable 인터페이스를 구현해야 한다.
 이 때 반드시 2개의 메소드(describeContents, writeToParcel)를 구현해야한다.(꾸러미화)
 또한 만들어진 꾸러미를 열어보기 위해서 정적객체인 CREATOR가 필요한데 여기서는꾸러미의 크기(newArray)를 알아보고, createFromParcel을 통해 꾸러미를 원래 객체로 가져온다.
+
+
+
+
+----------------
+`안드로이드 프로그래밍 정복 마시멜로판`(김상형 저) 책을 참고했습니다.
